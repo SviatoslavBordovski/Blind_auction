@@ -1,0 +1,25 @@
+from replit import clear
+from art import logo
+
+def auction():
+  print(logo)
+  audience = {}
+
+  bidders = True
+  while bidders:
+
+    #Tell name and bid, update a dictionary with received user's inputs
+    name = input("Tell us your name?\n")
+    bid_price = int(input("What is your bid?\n"))
+    audience.update({name: bid_price})
+    
+    bidder = input("Is there someone else who would like to bid?\n").lower()
+    clear()
+
+    #If no bidders => stop loop and compare bids in dictionary choosing max key in it
+    if bidder == 'no':
+      bidders = False
+      highest_bid_name = max(audience, key=audience.get)
+      print(f'Highest bid made {highest_bid_name}, congrats!')
+
+auction()
