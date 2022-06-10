@@ -1,5 +1,5 @@
 from replit import clear
-from view.cli_art import logo
+from art import logo
 
 def auction():
   print(logo)
