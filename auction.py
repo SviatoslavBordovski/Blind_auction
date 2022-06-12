@@ -16,7 +16,7 @@ def auction():
     bidder = input("Is there someone else who would like to bid?\n").lower()
     clear()
 
-    #If no bidders => stop loop and compare bids in dictionary choosing max key in it
+    #If there are no bidders => stop loop and compare bids in dictionary choosing maximum key in it
     if bidder == 'no':
       bidders = False
       highest_bid_name = max(audience, key=audience.get)
