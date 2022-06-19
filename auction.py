@@ -11,7 +11,7 @@ def auction():
   
   while bidders:
 
-    # Ask user his/her name and preferred bid, update a dictionary with received user's inputs
+    # Ask user's name and preferred bid, update a dictionary with received user's inputs
     name = input("Tell us your name?\n")
     bid_price = int(input("What is your bid?\n"))
     audience.update({name: bid_price})
