@@ -7,8 +7,8 @@ from view.cli_art import logo
 def auction():
   print(logo)
   audience = {}
-
   bidders = True
+  
   while bidders:
 
     # Ask user his/her name and preferred bid, update a dictionary with received user's inputs
