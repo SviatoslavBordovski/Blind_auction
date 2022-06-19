@@ -44,7 +44,6 @@ def auction():
     name = input("Tell us your name?\n")
     bid_price = int(input("What is your bid?\n"))
     audience.update({name: bid_price})
-    print(audience)
 
     bidder = input("Is there someone else who would like to bid?\n").lower()
     clear()
