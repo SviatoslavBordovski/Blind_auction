@@ -40,7 +40,7 @@ def auction():
   bidders = True
   while bidders:
 
-    #Tell name and bid, update a dictionary with received user's inputs
+    # Tell name and bid, update a dictionary with received user's inputs
     name = input("Tell us your name?\n")
     bid_price = int(input("What is your bid?\n"))
     audience.update({name: bid_price})
@@ -48,13 +48,10 @@ def auction():
     bidder = input("Is there someone else who would like to bid?\n").lower()
     clear()
 
-    #If no bidders => stop loop and compare bids in dictionary choosing max key in it
+    # If no bidders => stop loop and compare bids in dictionary choosing max key in it
     if bidder == 'no':
       bidders = False
       highest_made_bid(audience)
-      # highest_bid_name = max(audience, key=audience.get)
-      # print(f'Highest bid made {name} with bid {highest_bid}, congrats!')
-
 
 def highest_made_bid(bidders_dict):
   highest_bid = 0
